@@ -11,10 +11,12 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use GiocoPlus\Mongodb\MongoDb;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Contract\ResponseInterface;
 use Hyperf\Validation\Contract\ValidatorFactoryInterface;
+use Hyperf\View\RenderInterface;
 use Psr\Container\ContainerInterface;
 
 abstract class AbstractController
@@ -36,4 +38,22 @@ abstract class AbstractController
      * @var ResponseInterface
      */
     protected $response;
+
+    /**
+     * @Inject
+     * @var ValidatorFactoryInterface
+     */
+    protected $validation;
+
+    /**
+     * @Inject
+     * @var MongoDb
+     */
+    protected $mongodb;
+
+    /**
+     * @Inject
+     * @var RenderInterface
+     */
+    protected $render;
 }

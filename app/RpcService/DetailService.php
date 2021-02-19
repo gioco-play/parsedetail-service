@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace App\RpcService;
 
 use GiocoPlus\ParseDetail\Contract\ParseDetailServiceInterface;
-use GiocoPlus\PrismConst\Tool\ApiResponse;
 use Hyperf\RpcServer\Annotation\RpcService;
 
 /**
