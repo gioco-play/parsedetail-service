@@ -1,0 +1,74 @@
+/* Poker: */
+.poker-01, .poker-02, .poker-03, .poker-04, .poker-05, .poker-06, .poker-07, .poker-08, .poker-09, .poker-10, .poker-11, .poker-12, .poker-13, .poker-14, .poker-15, .poker-16, .poker-17, .poker-18, .poker-19, .poker-20, .poker-21, .poker-22, .poker-23, .poker-24, .poker-25, .poker-26, .poker-27, .poker-28, .poker-29, .poker-30, .poker-31, .poker-32, .poker-33, .poker-34, .poker-35, .poker-36, .poker-37, .poker-38, .poker-39, .poker-40, .poker-41, .poker-42, .poker-43, .poker-44, .poker-45, .poker-46, .poker-47, .poker-48, .poker-49, .poker-50, .poker-51, .poker-52, .poker-53, .poker-54, .poker-backfaces, .poker { 
+    width: 42px; 
+    height: 60px; 
+    display: inline-block; 
+    zoom: 1; 
+    *display: inline; 
+    *margin:0 2px; 
+    vertical-align: top; 
+    background: url("../img/poker.png");
+}
+.poker--fold:not(:last-child) { margin-right: -21px; }
+/* 黑桃 */
+.poker-01 { background-position: 0 -60px; }
+.poker-02 { background-position: -42px -60px; }
+.poker-03 { background-position: -84px -60px; }
+.poker-04 { background-position: -126px -60px; }
+.poker-05 { background-position: -168px -60px; }
+.poker-06 { background-position: -210px -60px; }
+.poker-07 { background-position: -252px -60px; }
+.poker-08 { background-position: -294px -60px; }
+.poker-09 { background-position: -336px -60px; }
+.poker-10 { background-position: -378px -60px; }
+.poker-11 { background-position: -420px -60px; }
+.poker-12 { background-position: -462px -60px; }
+.poker-13 { background-position: -504px -60px; }
+/* 紅心 */
+.poker-14 { background-position: 0 -180px; }
+.poker-15 { background-position: -42px -180px; }
+.poker-16 { background-position: -84px -180px; }
+.poker-17 { background-position: -126px -180px; }
+.poker-18 { background-position: -168px -180px; }
+.poker-19 { background-position: -210px -180px; }
+.poker-20 { background-position: -252px -180px; }
+.poker-21 { background-position: -294px -180px; }
+.poker-22 { background-position: -336px -180px; }
+.poker-23 { background-position: -378px -180px; }
+.poker-24 { background-position: -420px -180px; }
+.poker-25 { background-position: -462px -180px; }
+.poker-26 { background-position: -504px -180px; }
+/* 方塊 */
+.poker-27 { background-position: 0 -240px; }
+.poker-28 { background-position: -42px -240px; }
+.poker-29 { background-position: -84px -240px; }
+.poker-30 { background-position: -126px -240px; }
+.poker-31 { background-position: -168px -240px; }
+.poker-32 { background-position: -210px -240px; }
+.poker-33 { background-position: -252px -240px; }
+.poker-34 { background-position: -294px -240px; }
+.poker-35 { background-position: -336px -240px; }
+.poker-36 { background-position: -378px -240px; }
+.poker-37 { background-position: -420px -240px; }
+.poker-38 { background-position: -462px -240px; }
+.poker-39 { background-position: -504px -240px; }
+/* 梅花 */
+.poker-40 { background-position: 0 -120px; }
+.poker-41 { background-position: -42px -120px; }
+.poker-42 { background-position: -84px -120px; }
+.poker-43 { background-position: -126px -120px; }
+.poker-44 { background-position: -168px -120px; }
+.poker-45 { background-position: -210px -120px; }
+.poker-46 { background-position: -252px -120px; }
+.poker-47 { background-position: -294px -120px; }
+.poker-48 { background-position: -336px -120px; }
+.poker-49 { background-position: -378px -120px; }
+.poker-50 { background-position: -420px -120px; }
+.poker-51 { background-position: -462px -120px; }
+.poker-52 { background-position: -504px -120px; }
+/* 大鬼 */
+.poker-53 { background-position: -420px 0; }
+/* 小鬼 */
+.poker-54 { background-position: -462px 0; }
+/* 背面 */
+.poker-backfaces { background-position: -504px 0; }
