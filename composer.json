@@ -13,6 +13,7 @@
     "license": "Apache-2.0",
     "require": {
         "php": ">=7.3",
+        "duncan3dc/blade": "^4.10",
         "gioco-plus/parsedetail-contract": "dev-master",
         "gioco-plus/prism-plus": "dev-master",
         "hyperf/cache": "~2.1.0",
@@ -29,7 +30,9 @@
         "hyperf/rpc": "~2.1.0",
         "hyperf/rpc-client": "~2.1.0",
         "hyperf/rpc-server": "~2.1.0",
-        "hyperf/service-governance": "~2.1.0"
+        "hyperf/service-governance": "~2.1.0",
+        "hyperf/task": "^2.1",
+        "hyperf/view": "^2.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
