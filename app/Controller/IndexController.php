@@ -11,8 +11,6 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
-use App\Helper\DrawDetail;
-use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 use Psr\Http\Message\ResponseInterface;
@@ -23,12 +21,6 @@ use Psr\Http\Message\ResponseInterface;
  */
 class IndexController extends AbstractController
 {
-    /**
-     * @Inject
-     * @var DrawDetail
-     */
-    private $drawDetail;
-
     /**
      * @return ResponseInterface
      * @GetMapping(path="detail")
@@ -54,8 +46,8 @@ class IndexController extends AbstractController
                 return $this->view('default', ['detail not found']);
             }
 
-            ['parse_type' => $parseType, 'detail' => $detail] = current($data);
-            return $this->view($parseType, $detail);
+            ['parse_type' => $parseType, 'detail' => $detail, 'parse_mode' => $parseMode] = current($data);
+            return $this->view($parseType, $detail, $parseMode);
         } catch (\Throwable $th) {
             // TODO: remove output
             var_dump($th->getMessage());
@@ -67,12 +59,15 @@ class IndexController extends AbstractController
      * 渲染視圖
      * @param string $parseType
      * @param array $detail
+     * @param string $parseMode
      * @return ResponseInterface
      */
-    private function view(string $parseType, array $detail): ResponseInterface
+    private function view(string $parseType, array $detail, string $parseMode = ''): ResponseInterface
     {
-        return $this->render->render($parseType, [
-            'detail' => $this->drawDetail->{$parseType}($detail),
+        $parseMode = ($parseMode == '') ? 'string' : $parseMode;
+        return $this->render->render($parseMode, [
+            'detail' => $detail,
+            'parse_type' => $parseType,
         ]);
     }
 }

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\RpcService;
 
+use App\VendorService\KYLC;
 use GiocoPlus\ParseDetail\Contract\ParseDetailServiceInterface;
 use Hyperf\RpcServer\Annotation\RpcService;
 
@@ -16,12 +17,19 @@ class DetailService implements ParseDetailServiceInterface
     public function genUrl(string $gameCode, array $rawDetail, string $lang = 'zh'): string
     {
         try {
-            $vendorCode = strtoupper(strstr($gameCode, '_', true));
+            $vendorCode = strstr($gameCode, '_', true);
             $gameId = substr($gameCode, strpos($gameCode, '_') + 1);
 
-            $className = 'App\VendorService\\' . $vendorCode;
-            $class = new $className();
-            $key = $class->parsing($gameId, $rawDetail);
+            switch ($vendorCode) {
+                case 'ky':
+                case 'gflc':
+                    $vendorService = new KYLC();
+                    break;
+                default:
+                    throw new \Exception('vendor not exist');
+            }
+
+            $key = $vendorService->parsing($gameId, $rawDetail);
             return $this->urlResponse($lang, $key);
         } catch (\Throwable $th) {
             // TODO: remove output
