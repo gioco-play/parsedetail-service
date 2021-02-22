@@ -1,0 +1,132 @@
+/* mjhuase */
+.mjgui:after, .mjhuase:before, .mjhuase { 
+    background:url("../img/mahjong.png") no-repeat;
+    display: inline-block;
+}
+.mjhuase{height:114px;width:78px;background-position:0 -2736px;}
+.mjhuase:before{content: "";}
+.mjhuase--fold:not(:last-child){ margin-right:-57px; }
+.mjgui{position: relative;}
+.mjgui:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height:114px;
+    width:78px;
+    background-position:0 -2622px;
+}
+/* 萬 */
+.mj-01:before{height:114px;width:78px;background-position:0 -912px;}
+.mj-02:before{height:114px;width:78px;background-position:0 -798px;}
+.mj-03:before{height:114px;width:78px;background-position:0 -456px;}
+.mj-04:before{height:114px;width:78px;background-position:0 -114px;}
+.mj-05:before{height:114px;width:78px;background-position:0 0;}
+.mj-06:before{height:114px;width:78px;background-position:0 -342px;}
+.mj-07:before{height:114px;width:78px;background-position:0 -228px;}
+.mj-08:before{height:114px;width:78px;background-position:0 -1710px;}
+.mj-09:before{height:114px;width:78px;background-position:0 -1596px;}
+/* 條 */
+.mj-11:before{height:114px;width:78px;background-position:0 -2964px;}
+.mj-12:before{height:114px;width:78px;background-position:0 -2850px;}
+.mj-13:before{height:114px;width:78px;background-position:0 -2508px;}
+.mj-14:before{height:114px;width:78px;background-position:0 -2166px;}
+.mj-15:before{height:114px;width:78px;background-position:0 -2052px;}
+.mj-16:before{height:114px;width:78px;background-position:0 -2394px;}
+.mj-17:before{height:114px;width:78px;background-position:0 -2280px;}
+.mj-18:before{height:114px;width:78px;background-position:0 -3762px;}
+.mj-19:before{height:114px;width:78px;background-position:0 -3648px;}
+/* 筒 */
+.mj-21:before{height:114px;width:78px;background-position:0 -3990px;}
+.mj-22:before{height:114px;width:78px;background-position:0 -3876px;}
+.mj-23:before{height:114px;width:78px;background-position:0 -3534px;}
+.mj-24:before{height:114px;width:78px;background-position:0 -3192px;}
+.mj-25:before{height:114px;width:78px;background-position:0 -3078px;}
+.mj-26:before{height:114px;width:78px;background-position:0 -3420px;}
+.mj-27:before{height:114px;width:78px;background-position:0 -3306px;}
+.mj-28:before{height:114px;width:78px;background-position:0 -684px;}
+.mj-29:before{height:114px;width:78px;background-position:0 -570px;}
+/* 東南西北中發白 */
+.mj-31:before{height:114px;width:78px;background-position:0 -1140px;}
+.mj-32:before{height:114px;width:78px;background-position:0 -1368px;}
+.mj-33:before{height:114px;width:78px;background-position:0 -1938px;}
+.mj-34:before{height:114px;width:78px;background-position:0 -1482px;}
+.mj-35:before{height:114px;width:78px;background-position:0 -1254px;}
+.mj-36:before{height:114px;width:78px;background-position:0 -1026px;}
+.mj-37:before{height:114px;width:78px;background-position:0 -1824px;}
+/* 春夏秋冬梅蘭竹菊 */
+/* .mj-41:before{height:114px;width:78px;background-position:0 -4104px;}
+.mj-42:before{height:114px;width:78px;background-position:0 -4218px;}
+.mj-43:before{height:114px;width:78px;background-position:0 -4332px;}
+.mj-44:before{height:114px;width:78px;background-position:0 -4446px;}
+.mj-45:before{height:114px;width:78px;background-position:0 -4560px;}
+.mj-46:before{height:114px;width:78px;background-position:0 -4674px;}
+.mj-47:before{height:114px;width:78px;background-position:0 -4788px;}
+.mj-48:before{height:114px;width:78px;background-position:0 -4902px;} */
+.mj-41:before{height:114px;width:78px;background-position:0 -4112px;}
+.mj-42:before{height:114px;width:78px;background-position:0 -4226px;}
+.mj-43:before{height:114px;width:78px;background-position:0 -4340px;}
+.mj-44:before{height:114px;width:78px;background-position:0 -4454px;}
+.mj-45:before{height:114px;width:78px;background-position:0 -4568px;}
+.mj-46:before{height:114px;width:78px;background-position:0 -4682px;}
+.mj-47:before{height:114px;width:78px;background-position:0 -4796px;}
+.mj-48:before{height:114px;width:78px;background-position:0 -4910px;}
+
+.mj_scale_half, .mj_scale_half:before, .mj_scale_half.mjgui:after {
+    /* background-size: auto 2052px;
+    height:57px;
+    width:39px; */
+    background-size: auto 2525px;
+    height:57px;
+    width:39px;
+}
+.mj_scale_half.mjhuase--fold:not(:last-child) {margin-right: 0px;}
+.mjhuase{background-position:0 -1368px;}
+.mj_scale_half.mjgui:after{background-position:0 -1311px;}
+/* 萬 */
+.mj_scale_half.mj-01:before{background-position:0 -456px;}
+.mj_scale_half.mj-02:before{background-position:0 -399px;}
+.mj_scale_half.mj-03:before{background-position:0 -228px;}
+.mj_scale_half.mj-04:before{background-position:0 -57px;}
+.mj_scale_half.mj-05:before{background-position:0 0;}
+.mj_scale_half.mj-06:before{background-position:0 -171px;}
+.mj_scale_half.mj-07:before{background-position:0 -114px;}
+.mj_scale_half.mj-08:before{background-position:0 -855px;}
+.mj_scale_half.mj-09:before{background-position:0 -798px;}
+/* 條 */
+.mj_scale_half.mj-11:before{background-position:0 -1482px;}
+.mj_scale_half.mj-12:before{background-position:0 -1425px;}
+.mj_scale_half.mj-13:before{background-position:0 -1254px;}
+.mj_scale_half.mj-14:before{background-position:0 -1083px;}
+.mj_scale_half.mj-15:before{background-position:0 -1026px;}
+.mj_scale_half.mj-16:before{background-position:0 -1197px;}
+.mj_scale_half.mj-17:before{background-position:0 -1140px;}
+.mj_scale_half.mj-18:before{background-position:0 -1881px;}
+.mj_scale_half.mj-19:before{background-position:0 -1824px;}
+/* 筒 */
+.mj_scale_half.mj-21:before{background-position:0 -1995px;}
+.mj_scale_half.mj-22:before{background-position:0 -1938px;}
+.mj_scale_half.mj-23:before{background-position:0 -1767px;}
+.mj_scale_half.mj-24:before{background-position:0 -1597px;}
+.mj_scale_half.mj-25:before{background-position:0 -1540px;}
+.mj_scale_half.mj-26:before{background-position:0 -1710px;}
+.mj_scale_half.mj-27:before{background-position:0 -1653px;}
+.mj_scale_half.mj-28:before{background-position:0 -342px;}
+.mj_scale_half.mj-29:before{background-position:0 -285px;}
+/* 東南西北中發白 */
+.mj_scale_half.mj-31:before{background-position:0 -570px;}
+.mj_scale_half.mj-32:before{background-position:0 -684px;}
+.mj_scale_half.mj-33:before{background-position:0 -969px;}
+.mj_scale_half.mj-34:before{background-position:0 -741px;}
+.mj_scale_half.mj-35:before{background-position:0 -627px;}
+.mj_scale_half.mj-36:before{background-position:0 -513px;}
+.mj_scale_half.mj-37:before{background-position:0 -912px;}
+/* 春夏秋冬梅蘭竹菊 */
+.mj_scale_half.mj-41:before{background-position:0 -2284px;}
+.mj_scale_half.mj-42:before{background-position:0 -2341px;}
+.mj_scale_half.mj-43:before{background-position:0 -2398px;}
+.mj_scale_half.mj-44:before{background-position:0 -2455px;}
+.mj_scale_half.mj-45:before{background-position:0 -2056px;}
+.mj_scale_half.mj-46:before{background-position:0 -2113px;}
+.mj_scale_half.mj-47:before{background-position:0 -2170px;}
+.mj_scale_half.mj-48:before{background-position:0 -2227px;}
