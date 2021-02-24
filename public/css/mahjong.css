@@ -5,10 +5,11 @@
 .mahjong-H1, .mahjong-H2, .mahjong-H3, .mahjong-H4, .mahjong-H5, .mahjong-H6, .mahjong-H7,
 .mahjong-F1, .mahjong-F2, .mahjong-F3, .mahjong-F4, .mahjong-F5, .mahjong-F6, .mahjong-F7, .mahjong-F8
 {
-    background:url("../img/mahjong.png");
+    background:url("../img/mahjong.png") no-repeat;
     display: inline-block;
     background-position:0 -1368px;
     background-size: auto 2525px;
+    vertical-align: middle;
 }
 
 .mahjong-W1:before, .mahjong-W2:before, .mahjong-W3:before, .mahjong-W4:before, .mahjong-W5:before, .mahjong-W6:before, .mahjong-W7:before, .mahjong-W8:before, .mahjong-W9:before,
@@ -17,12 +18,13 @@
 .mahjong-H1:before, .mahjong-H2:before, .mahjong-H3:before, .mahjong-H4:before, .mahjong-H5:before, .mahjong-H6:before, .mahjong-H7:before,
 .mahjong-F1:before, .mahjong-F2:before, .mahjong-F3:before, .mahjong-F4:before, .mahjong-F5:before, .mahjong-F6:before, .mahjong-F7:before, .mahjong-F8:before
 {
-    background:url("../img/mahjong.png");
+    background:url("../img/mahjong.png") no-repeat;
     display: inline-block;
     content: "";
     background-size: auto 2525px;
     height:57px;
     width:39px;
+    vertical-align: middle;
 }
 
 /* 萬 */

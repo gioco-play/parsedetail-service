@@ -1,0 +1,17 @@
+/* Dice: */
+.dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6
+{
+    background: url("../img/dice.png") no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin: -3px;
+    background-size: auto 300px;
+}
+.dice-1 {background-position: -6px -14px;}
+.dice-2 {background-position: -6px -60.2px;}
+.dice-3 {background-position: -6px -107px;}
+.dice-4 {background-position: -6px -153.2px;}
+.dice-5 {background-position: -6px -199.9px;}
+.dice-6 {background-position: -6px -246.1px;}

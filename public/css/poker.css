@@ -3,8 +3,7 @@
 .poker-H1, .poker-H2, .poker-H3, .poker-H4, .poker-H5, .poker-H6, .poker-H7, .poker-H8, .poker-H9, .poker-H10, .poker-H11, .poker-H12, .poker-H13,
 .poker-D1, .poker-D2, .poker-D3, .poker-D4, .poker-D5, .poker-D6, .poker-D7, .poker-D8, .poker-D9, .poker-D10, .poker-D11, .poker-D12, .poker-D13,
 .poker-C1, .poker-C2, .poker-C3, .poker-C4, .poker-C5, .poker-C6, .poker-C7, .poker-C8, .poker-C9, .poker-C10, .poker-C11, .poker-C12, .poker-C13,
-.poker-J1, .poker-J2,
-.poker {
+.poker-J1, .poker-J2 {
     width: 42px;
     height: 60px;
     display: inline-block;
@@ -13,8 +12,8 @@
     *margin:0 2px;
     vertical-align: top;
     background: url("../img/poker.png");
+    vertical-align: middle;
 }
-.poker--fold:not(:last-child) { margin-right: -21px; }
 
 /* 黑桃 */
 .poker-S1 { background-position: 0 -60px; }
