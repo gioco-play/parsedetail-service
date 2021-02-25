@@ -11,6 +11,7 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use App\Helper\Constant\ParseMode;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 use Psr\Http\Message\ResponseInterface;
@@ -36,22 +37,27 @@ class IndexController extends AbstractController
         );
 
         if ($validator->fails()) {
-            return $this->view('default', ['key must be required']);
+            return $this->errorView('key must be required');
         }
 
         try {
             $key = base64url_decode($inputs['key']);
             $data = $this->mongodb->fetchAll('game_detail', ['_id' => $key]);
             if (empty($data)) {
-                return $this->view('default', ['detail not found']);
+                return $this->errorView('detail not found');
             }
 
-            ['parse_type' => $parseType, 'detail' => $detail, 'parse_mode' => $parseMode] = current($data);
-            return $this->view($parseType, $detail, $parseMode);
+            [
+                'parse_type' => $parseType,
+                'detail' => $detail,
+                'parse_mode' => $parseMode,
+                'player_cards' => $playerCards,
+            ] = current($data);
+            return $this->view($parseType, $detail, $playerCards, $parseMode);
         } catch (\Throwable $th) {
             // TODO: remove output
             var_dump($th->getMessage());
-            return $this->view('default', ['detail error']);
+            return $this->errorView('detail error');
         }
     }
 
@@ -59,15 +65,26 @@ class IndexController extends AbstractController
      * 渲染視圖
      * @param string $parseType
      * @param array $detail
+     * @param array $playerCards
      * @param string $parseMode
      * @return ResponseInterface
      */
-    private function view(string $parseType, array $detail, string $parseMode = ''): ResponseInterface
+    private function view(string $parseType, array $detail, array $playerCards = [], string $parseMode = ParseMode::STRING): ResponseInterface
     {
-        $parseMode = ($parseMode == '') ? 'string' : $parseMode;
         return $this->render->render($parseMode, [
             'detail' => $detail,
             'parse_type' => $parseType,
+            'player_cards' => $playerCards,
         ]);
+    }
+
+    /**
+     * 渲染視圖
+     * @param string $msg
+     * @return ResponseInterface
+     */
+    private function errorView(string $msg): ResponseInterface
+    {
+        return $this->view('', [['string_0' => $msg]]);
     }
 }
