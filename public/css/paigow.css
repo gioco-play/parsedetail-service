@@ -1,0 +1,35 @@
+/* Paigow: */
+.paigow-11, .paigow-12, .paigow-13, .paigow-14, .paigow-15, .paigow-16,
+.paigow-22, .paigow-23, .paigow-24, .paigow-25, .paigow-26,
+.paigow-33, .paigow-34, .paigow-35, .paigow-36,
+.paigow-44, .paigow-45, .paigow-46, .paigow-55, .paigow-56, .paigow-66
+{
+    background: url('../img/paigow.png') no-repeat;
+    width: 32px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: auto 250px;
+}
+
+.paigow-11 {background-position: -51.5px -88px;}
+.paigow-12 {background-position: -97.5px -5px;}
+.paigow-13 {background-position: -98px -88px;}
+.paigow-14 {background-position: -52.5px -5px;}
+.paigow-15 {background-position: -142.5px -5px;}
+.paigow-16 {background-position: -143px -88px;}
+.paigow-22 {background-position: -188px -5px;}
+.paigow-23 {background-position: -6.5px -5px;}
+.paigow-24 {background-position: -188px -88px;}
+.paigow-25 {background-position: -96.5px -172px;}
+.paigow-26 {background-position: -6px -172px;}
+.paigow-33 {background-position: -233px -88px;}
+.paigow-34 {background-position: -232.5px -5px;}
+.paigow-35 {background-position: -52px -172px;}
+.paigow-36 {background-position: -141.5px -172px;}
+.paigow-44 {background-position: -186.5px -172px;}
+.paigow-45 {background-position: -6px -88.5px;}
+.paigow-46 {background-position: -232px -172px;}
+.paigow-55 {background-position: -278px -5px;}
+.paigow-56 {background-position: -277.5px -88px;}
+.paigow-66 {background-position: -278px -171.5px;}

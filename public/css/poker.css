@@ -16,61 +16,61 @@
 }
 
 /* 黑桃 */
-.poker-S1 { background-position: 0 -60px; }
-.poker-S2 { background-position: -42px -60px; }
-.poker-S3 { background-position: -84px -60px; }
-.poker-S4 { background-position: -126px -60px; }
-.poker-S5 { background-position: -168px -60px; }
-.poker-S6 { background-position: -210px -60px; }
-.poker-S7 { background-position: -252px -60px; }
-.poker-S8 { background-position: -294px -60px; }
-.poker-S9 { background-position: -336px -60px; }
-.poker-S10 { background-position: -378px -60px; }
-.poker-S11 { background-position: -420px -60px; }
-.poker-S12 { background-position: -462px -60px; }
-.poker-S13 { background-position: -504px -60px; }
+.poker-S1 {background-position: 0 -60px;}
+.poker-S2 {background-position: -42px -60px;}
+.poker-S3 {background-position: -84px -60px;}
+.poker-S4 {background-position: -126px -60px;}
+.poker-S5 {background-position: -168px -60px;}
+.poker-S6 {background-position: -210px -60px;}
+.poker-S7 {background-position: -252px -60px;}
+.poker-S8 {background-position: -294px -60px;}
+.poker-S9 {background-position: -336px -60px;}
+.poker-S10 {background-position: -378px -60px;}
+.poker-S11 {background-position: -420px -60px;}
+.poker-S12 {background-position: -462px -60px;}
+.poker-S13 {background-position: -504px -60px;}
 /* 紅心 */
-.poker-H1 { background-position: 0 -180px; }
-.poker-H2 { background-position: -42px -180px; }
-.poker-H3 { background-position: -84px -180px; }
-.poker-H4 { background-position: -126px -180px; }
-.poker-H5 { background-position: -168px -180px; }
-.poker-H6 { background-position: -210px -180px; }
-.poker-H7 { background-position: -252px -180px; }
-.poker-H8 { background-position: -294px -180px; }
-.poker-H9 { background-position: -336px -180px; }
-.poker-H10 { background-position: -378px -180px; }
-.poker-H11 { background-position: -420px -180px; }
-.poker-H12 { background-position: -462px -180px; }
-.poker-H13 { background-position: -504px -180px; }
+.poker-H1 {background-position: 0 -180px;}
+.poker-H2 {background-position: -42px -180px;}
+.poker-H3 {background-position: -84px -180px;}
+.poker-H4 {background-position: -126px -180px;}
+.poker-H5 {background-position: -168px -180px;}
+.poker-H6 {background-position: -210px -180px;}
+.poker-H7 {background-position: -252px -180px;}
+.poker-H8 {background-position: -294px -180px;}
+.poker-H9 {background-position: -336px -180px;}
+.poker-H10 {background-position: -378px -180px;}
+.poker-H11 {background-position: -420px -180px;}
+.poker-H12 {background-position: -462px -180px;}
+.poker-H13 {background-position: -504px -180px;}
 /* 方塊 */
-.poker-D1 { background-position: 0 -240px; }
-.poker-D2 { background-position: -42px -240px; }
-.poker-D3 { background-position: -84px -240px; }
-.poker-D4 { background-position: -126px -240px; }
-.poker-D5 { background-position: -168px -240px; }
-.poker-D6 { background-position: -210px -240px; }
-.poker-D7 { background-position: -252px -240px; }
-.poker-D8 { background-position: -294px -240px; }
-.poker-D9 { background-position: -336px -240px; }
-.poker-D10 { background-position: -378px -240px; }
-.poker-D11 { background-position: -420px -240px; }
-.poker-D12 { background-position: -462px -240px; }
-.poker-D13 { background-position: -504px -240px; }
+.poker-D1 {background-position: 0 -240px;}
+.poker-D2 {background-position: -42px -240px;}
+.poker-D3 {background-position: -84px -240px;}
+.poker-D4 {background-position: -126px -240px;}
+.poker-D5 {background-position: -168px -240px;}
+.poker-D6 {background-position: -210px -240px;}
+.poker-D7 {background-position: -252px -240px;}
+.poker-D8 {background-position: -294px -240px;}
+.poker-D9 {background-position: -336px -240px;}
+.poker-D10 {background-position: -378px -240px;}
+.poker-D11 {background-position: -420px -240px;}
+.poker-D12 {background-position: -462px -240px;}
+.poker-D13 {background-position: -504px -240px;}
 /* 梅花 */
-.poker-C1 { background-position: 0 -120px; }
-.poker-C2 { background-position: -42px -120px; }
-.poker-C3 { background-position: -84px -120px; }
-.poker-C4 { background-position: -126px -120px; }
-.poker-C5 { background-position: -168px -120px; }
-.poker-C6 { background-position: -210px -120px; }
-.poker-C7 { background-position: -252px -120px; }
-.poker-C8 { background-position: -294px -120px; }
-.poker-C9 { background-position: -336px -120px; }
-.poker-C10 { background-position: -378px -120px; }
-.poker-C11 { background-position: -420px -120px; }
-.poker-C12 { background-position: -462px -120px; }
-.poker-C13 { background-position: -504px -120px; }
+.poker-C1 {background-position: 0 -120px;}
+.poker-C2 {background-position: -42px -120px;}
+.poker-C3 {background-position: -84px -120px;}
+.poker-C4 {background-position: -126px -120px;}
+.poker-C5 {background-position: -168px -120px;}
+.poker-C6 {background-position: -210px -120px;}
+.poker-C7 {background-position: -252px -120px;}
+.poker-C8 {background-position: -294px -120px;}
+.poker-C9 {background-position: -336px -120px;}
+.poker-C10 {background-position: -378px -120px;}
+.poker-C11 {background-position: -420px -120px;}
+.poker-C12 {background-position: -462px -120px;}
+.poker-C13 {background-position: -504px -120px;}
 /* 大小鬼 */
-.poker-J1 { background-position: -420px 0; }
-.poker-J2 { background-position: -462px 0; }
+.poker-J1 {background-position: -420px 0;}
+.poker-J2 {background-position: -462px 0;}

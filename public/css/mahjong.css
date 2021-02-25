@@ -28,49 +28,49 @@
 }
 
 /* 萬 */
-.mahjong-W1:before{background-position:0 -456px;}
-.mahjong-W2:before{background-position:0 -399px;}
-.mahjong-W3:before{background-position:0 -228px;}
-.mahjong-W4:before{background-position:0 -57px;}
-.mahjong-W5:before{background-position:0 0;}
-.mahjong-W6:before{background-position:0 -171px;}
-.mahjong-W7:before{background-position:0 -114px;}
-.mahjong-W8:before{background-position:0 -855px;}
-.mahjong-W9:before{background-position:0 -798px;}
+.mahjong-W1:before {background-position: 0 -456px;}
+.mahjong-W2:before {background-position: 0 -399px;}
+.mahjong-W3:before {background-position: 0 -228px;}
+.mahjong-W4:before {background-position: 0 -57px;}
+.mahjong-W5:before {background-position: 0 0;}
+.mahjong-W6:before {background-position: 0 -171px;}
+.mahjong-W7:before {background-position: 0 -114px;}
+.mahjong-W8:before {background-position: 0 -855px;}
+.mahjong-W9:before {background-position: 0 -798px;}
 /* 條 */
-.mahjong-B1:before{background-position:0 -1482px;}
-.mahjong-B2:before{background-position:0 -1425px;}
-.mahjong-B3:before{background-position:0 -1254px;}
-.mahjong-B4:before{background-position:0 -1083px;}
-.mahjong-B5:before{background-position:0 -1026px;}
-.mahjong-B6:before{background-position:0 -1197px;}
-.mahjong-B7:before{background-position:0 -1140px;}
-.mahjong-B8:before{background-position:0 -1881px;}
-.mahjong-B9:before{background-position:0 -1824px;}
+.mahjong-B1:before {background-position: 0 -1482px;}
+.mahjong-B2:before {background-position: 0 -1425px;}
+.mahjong-B3:before {background-position: 0 -1254px;}
+.mahjong-B4:before {background-position: 0 -1083px;}
+.mahjong-B5:before {background-position: 0 -1026px;}
+.mahjong-B6:before {background-position: 0 -1197px;}
+.mahjong-B7:before {background-position: 0 -1140px;}
+.mahjong-B8:before {background-position: 0 -1881px;}
+.mahjong-B9:before {background-position: 0 -1824px;}
 /* 筒 */
-.mahjong-D1:before{background-position:0 -1995px;}
-.mahjong-D2:before{background-position:0 -1938px;}
-.mahjong-D3:before{background-position:0 -1767px;}
-.mahjong-D4:before{background-position:0 -1597px;}
-.mahjong-D5:before{background-position:0 -1540px;}
-.mahjong-D6:before{background-position:0 -1710px;}
-.mahjong-D7:before{background-position:0 -1653px;}
-.mahjong-D8:before{background-position:0 -342px;}
-.mahjong-D9:before{background-position:0 -285px;}
+.mahjong-D1:before {background-position: 0 -1995px;}
+.mahjong-D2:before {background-position: 0 -1938px;}
+.mahjong-D3:before {background-position: 0 -1767px;}
+.mahjong-D4:before {background-position: 0 -1597px;}
+.mahjong-D5:before {background-position: 0 -1540px;}
+.mahjong-D6:before {background-position: 0 -1710px;}
+.mahjong-D7:before {background-position: 0 -1653px;}
+.mahjong-D8:before {background-position: 0 -342px;}
+.mahjong-D9:before {background-position: 0 -285px;}
 /* 字: 東南西北中發白 */
-.mahjong-H1:before{background-position:0 -570px;}
-.mahjong-H2:before{background-position:0 -684px;}
-.mahjong-H3:before{background-position:0 -969px;}
-.mahjong-H4:before{background-position:0 -741px;}
-.mahjong-H5:before{background-position:0 -627px;}
-.mahjong-H6:before{background-position:0 -513px;}
-.mahjong-H7:before{background-position:0 -912px;}
+.mahjong-H1:before {background-position: 0 -570px;}
+.mahjong-H2:before {background-position: 0 -684px;}
+.mahjong-H3:before {background-position: 0 -969px;}
+.mahjong-H4:before {background-position: 0 -741px;}
+.mahjong-H5:before {background-position: 0 -627px;}
+.mahjong-H6:before {background-position: 0 -513px;}
+.mahjong-H7:before {background-position: 0 -912px;}
 /* 花: 梅蘭竹菊春夏秋冬 */
-.mahjong-F1:before{background-position:0 -2056px;}
-.mahjong-F2:before{background-position:0 -2113px;}
-.mahjong-F3:before{background-position:0 -2170px;}
-.mahjong-F4:before{background-position:0 -2227px;}
-.mahjong-F5:before{background-position:0 -2284px;}
-.mahjong-F6:before{background-position:0 -2341px;}
-.mahjong-F7:before{background-position:0 -2398px;}
-.mahjong-F8:before{background-position:0 -2455px;}
+.mahjong-F1:before {background-position: 0 -2056px;}
+.mahjong-F2:before {background-position: 0 -2113px;}
+.mahjong-F3:before {background-position: 0 -2170px;}
+.mahjong-F4:before {background-position: 0 -2227px;}
+.mahjong-F5:before {background-position: 0 -2284px;}
+.mahjong-F6:before {background-position: 0 -2341px;}
+.mahjong-F7:before {background-position: 0 -2398px;}
+.mahjong-F8:before {background-position: 0 -2455px;}

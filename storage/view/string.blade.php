@@ -8,6 +8,23 @@
     @endif
 </head>
 <body>
+@foreach ($player_cards as $row)
+    @foreach ($row as $k => $v)
+        @switch (current(explode('_', $k)))
+            @case ('string')
+                {{ $v }}
+                @break
+            @case ('card')
+                <div class="{{ $parse_type }}-{{ $v }}"></div>
+                @break
+            @default
+                @break
+        @endswitch
+    @endforeach
+    <br />
+@endforeach
+<br />
+
 @foreach ($detail as $row)
     @foreach ($row as $k => $v)
         @switch (current(explode('_', $k)))
