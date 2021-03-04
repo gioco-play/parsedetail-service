@@ -32,6 +32,7 @@
         "hyperf/rpc-server": "~2.1.0",
         "hyperf/service-governance": "~2.1.0",
         "hyperf/task": "^2.1",
+        "hyperf/translation": "^2.1",
         "hyperf/view": "^2.1"
     },
     "require-dev": {
