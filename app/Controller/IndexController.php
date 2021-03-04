@@ -47,13 +47,8 @@ class IndexController extends AbstractController
                 return $this->errorView('detail not found');
             }
 
-            [
-                'parse_type' => $parseType,
-                'detail' => $detail,
-                'parse_mode' => $parseMode,
-                'player_cards' => $playerCards,
-            ] = current($data);
-            return $this->view($parseType, $detail, $playerCards, $parseMode);
+            ['game_result' => $gameResult, 'game_detail' => $gameDetail, 'parse_type' => $parseType, 'parse_mode' => $parseMode] = current($data);
+            return $this->view($parseType, $gameDetail, json_decode(json_encode($gameResult), true), $parseMode);
         } catch (\Throwable $th) {
             // TODO: remove output
             var_dump($th->getMessage());
@@ -63,18 +58,18 @@ class IndexController extends AbstractController
 
     /**
      * 渲染視圖
-     * @param string $parseType
-     * @param array $detail
-     * @param array $playerCards
-     * @param string $parseMode
+     * @param string $parseType 牌圖類型
+     * @param array $gameDetail 遊戲詳情
+     * @param array $gameResult 遊戲結果
+     * @param string $parseMode 解析模式
      * @return ResponseInterface
      */
-    private function view(string $parseType, array $detail, array $playerCards = [], string $parseMode = ParseMode::STRING): ResponseInterface
+    private function view(string $parseType, array $gameDetail, array $gameResult = [], string $parseMode = ParseMode::STRING): ResponseInterface
     {
         return $this->render->render($parseMode, [
-            'detail' => $detail,
+            'game_result' => $gameResult,
+            'game_detail' => $gameDetail,
             'parse_type' => $parseType,
-            'player_cards' => $playerCards,
         ]);
     }
 

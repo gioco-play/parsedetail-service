@@ -8,8 +8,8 @@
     @endif
 </head>
 <body>
-@if (!empty($player_cards))
-    @foreach ($player_cards as $row)
+@if (!empty($game_result))
+    @foreach ($game_result as $row)
         @foreach ($row as $k => $v)
             @switch (current(explode('_', $k)))
                 @case ('string')
@@ -27,7 +27,7 @@
     <br />
 @endif
 
-@foreach ($detail as $row)
+@foreach ($game_detail as $row)
     @foreach ($row as $k => $v)
         @switch (current(explode('_', $k)))
             @case ('string')

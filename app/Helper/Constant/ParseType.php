@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace App\Helper\Constant;
 
+/**
+ * 牌圖類型
+ */
 class ParseType
 {
     /**
