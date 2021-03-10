@@ -1,0 +1,1 @@
+<div class="{{ $card }} ml-2"></div>
