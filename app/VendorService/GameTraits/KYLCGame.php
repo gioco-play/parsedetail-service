@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\VendorService\Traits;
+namespace App\VendorService\GameTraits;
 
-trait KYLCCardParse
+trait KYLCGame
 {
     /**
      * 抢庄牌九
