@@ -3,12 +3,12 @@ declare(strict_types=1);
 
 namespace App\VendorService;
 
-use App\Helper\Constant\DiceCode;
-use App\Helper\Constant\MahjongCode;
-use App\Helper\Constant\PaigowCode;
+use App\Helper\Constant\CardCode\DiceCode;
+use App\Helper\Constant\CardCode\MahjongCode;
+use App\Helper\Constant\CardCode\PaigowCode;
 use App\Helper\Constant\ParseMode;
 use App\Helper\Constant\ParseType;
-use App\Helper\Constant\PokerCode;
+use App\Helper\Constant\CardCode\PokerCode;
 use App\VendorService\Traits\KYLCCardParse;
 use GiocoPlus\Mongodb\MongoDb;
 use Hyperf\Di\Annotation\Inject;
@@ -27,10 +27,11 @@ class KYLC implements VendorServiceInterface
      * 解析
      * @param string $gameId
      * @param array $rawDetail
+     * @param string $vendorCode
      * @return string
      * @throws \GiocoPlus\Mongodb\Exception\MongoDBException
      */
-    public function parsing(string $gameId, array $rawDetail): string
+    public function parsing(string $gameId, array $rawDetail, string $vendorCode): string
     {
         // card_value: 該局牌值結果; chair_id: 玩家座位號; raw: 原廠對局歷程
         ['card_value' => $cardValue, 'chair_id' => $chairId, 'raw' => $raw] = $rawDetail;
@@ -111,7 +112,8 @@ class KYLC implements VendorServiceInterface
             'game_result' => $playerCards ?? [],
             'game_detail' => $detail,
             'parse_type' => $parseType,
-            'parse_mode' => ParseMode::STRING,
+            'parse_mode' => ParseMode::STRING_DEFAULT,
+            'vendor_code' => $vendorCode,
         ]);
     }
 

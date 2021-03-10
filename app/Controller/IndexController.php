@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Helper\Constant\ParseMode;
+use App\Helper\Constant\ParseType;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 use Psr\Http\Message\ResponseInterface;
@@ -40,6 +41,8 @@ class IndexController extends AbstractController
             return $this->errorView('key must be required');
         }
 
+        $lang = $inputs['lang'] ?? 'zh';
+
         try {
             $key = base64url_decode($inputs['key']);
             $data = $this->mongodb->fetchAll('game_detail', ['_id' => $key]);
@@ -47,8 +50,18 @@ class IndexController extends AbstractController
                 return $this->errorView('detail not found');
             }
 
-            ['game_result' => $gameResult, 'game_detail' => $gameDetail, 'parse_type' => $parseType, 'parse_mode' => $parseMode] = current($data);
-            return $this->view($parseType, $gameDetail, json_decode(json_encode($gameResult), true), $parseMode);
+            [
+                'game_result' => $gameResult,
+                'game_detail' => $gameDetail,
+                'parse_type' => $parseType,
+                'parse_mode' => $parseMode,
+                'vendor_code' => $vendorCode,
+            ] = current($data);
+
+            // 格式轉換
+            $gameResult = json_decode(json_encode($gameResult), true);
+            $gameDetail = json_decode(json_encode($gameDetail), true);
+            return $this->view($parseType, $gameDetail, $vendorCode, $gameResult, $parseMode, $lang);
         } catch (\Throwable $th) {
             // TODO: remove output
             var_dump($th->getMessage());
@@ -60,16 +73,20 @@ class IndexController extends AbstractController
      * 渲染視圖
      * @param string $parseType 牌圖類型
      * @param array $gameDetail 遊戲詳情
+     * @param string $vendorCode 遊戲商代碼
      * @param array $gameResult 遊戲結果
      * @param string $parseMode 解析模式
+     * @param string $lang 語言
      * @return ResponseInterface
      */
-    private function view(string $parseType, array $gameDetail, array $gameResult = [], string $parseMode = ParseMode::STRING): ResponseInterface
+    private function view(string $parseType, array $gameDetail, string $vendorCode = '', array $gameResult = [], string $parseMode = ParseMode::STRING_DEFAULT, $lang = 'zh'): ResponseInterface
     {
         return $this->render->render($parseMode, [
             'game_result' => $gameResult,
             'game_detail' => $gameDetail,
             'parse_type' => $parseType,
+            'lang' => $lang,
+            'vendor_code' => $vendorCode,
         ]);
     }
 
@@ -80,6 +97,6 @@ class IndexController extends AbstractController
      */
     private function errorView(string $msg): ResponseInterface
     {
-        return $this->view('', [['string_0' => $msg]]);
+        return $this->view(ParseType::DEFAULT, [['string_0' => $msg]]);
     }
 }

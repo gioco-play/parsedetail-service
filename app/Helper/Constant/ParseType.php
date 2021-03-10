@@ -12,7 +12,7 @@ class ParseType
     /**
      * 預設
      */
-    const DEFAULT = 'default';
+    const DEFAULT = '';
 
     /**
      * 撲克牌
@@ -33,9 +33,4 @@ class ParseType
      * 牌九
      */
     const PAIGOW = 'paigow';
-
-    /**
-     * 體育
-     */
-    const SPORT = 'sport';
 }

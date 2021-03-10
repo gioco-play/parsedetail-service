@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Helper\Constant;
+namespace App\Helper\Constant\CardCode;
 
 class PokerCode
 {
