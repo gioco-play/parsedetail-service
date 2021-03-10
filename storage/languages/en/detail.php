@@ -7,4 +7,5 @@ return [
     'play_type' => 'Play Type',
     'no_data' => 'No Data',
     'round_no' => 'Round No.',
+    'game_result' => 'Game Result',
 ];

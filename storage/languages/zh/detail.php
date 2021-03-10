@@ -7,4 +7,5 @@ return [
     'play_type' => '下注玩法',
     'no_data' => '无资料',
     'round_no' => '局号',
+    'game_result' => '游戏结果',
 ];

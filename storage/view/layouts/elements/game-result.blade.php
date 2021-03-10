@@ -15,7 +15,7 @@
                 @break
             @case ('string')
                 <span class="divider mr-3 ml-3"> | </span>
-                <span class="ml-2">{{ __($result, [], $lang) }}</span>
+                <span class="ml-2">{{ __('detail.game_result', [], $lang) }}：{{ __($result, [], $lang) }}</span>
                 @break
             @default
                 @break
