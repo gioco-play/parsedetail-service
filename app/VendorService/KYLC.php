@@ -112,7 +112,7 @@ class KYLC implements VendorServiceInterface
             'game_result' => $playerCards ?? [],
             'game_detail' => $detail,
             'parse_type' => $parseType,
-            'parse_mode' => ParseMode::STRING_DEFAULT,
+            'parse_mode' => ParseMode::STRING,
             'vendor_code' => $vendorCode,
         ]);
     }

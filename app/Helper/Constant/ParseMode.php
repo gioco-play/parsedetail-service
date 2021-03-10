@@ -10,20 +10,25 @@ namespace App\Helper\Constant;
 class ParseMode
 {
     /**
-     * 字串預設版型
+     * 字串版型
      */
-    const STRING_DEFAULT = 'game-detail.string';
-
-    /**
-     * 真人預設版型
-     */
-    const LIVE_DEFAULT = 'game-detail.live';
+    const STRING = 'game-detail.string';
 
     /**
      * 真人版型
      */
-    const BANKER_PLAYER = 'live.banker-player';
-    const PLAYER_LIST = 'live.player-list';
-    const ONLY_CARD = 'live.only-card';
+    const LIVE = 'game-detail.live';
+    const LIVE_BANKER_PLAYER = 'live.banker-player';
+    const LIVE_PLAYER_LIST = 'live.player-list';
+    const LIVE_ONLY_CARD = 'live.only-card';
 
+    /**
+     * 體育電競版型
+     */
+    const SPORT = 'game-detail.sport';
+
+    /**
+     * 彩票版型
+     */
+    const KENO = 'game-detail.keno';
 }

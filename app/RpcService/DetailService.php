@@ -29,7 +29,7 @@ class DetailService implements ParseDetailServiceInterface
                     throw new \Exception('vendor not exist');
             }
 
-            $key = $vendorService->parsing($gameId, $rawDetail);
+            $key = $vendorService->parsing($gameId, $rawDetail, $vendorCode);
             return $this->urlResponse($lang, $key);
         } catch (\Throwable $th) {
             // TODO: remove output

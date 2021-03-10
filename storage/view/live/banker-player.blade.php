@@ -1,4 +1,4 @@
-@extends(\App\Helper\Constant\ParseMode::LIVE_DEFAULT)
+@extends(\App\Helper\Constant\ParseMode::LIVE)
 
 @section('game-result')
 @if (!empty($game_result['player']) && !empty($game_result['banker']))

@@ -1,4 +1,4 @@
-@extends(\App\Helper\Constant\ParseMode::LIVE_DEFAULT)
+@extends(\App\Helper\Constant\ParseMode::LIVE)
 
 @section('game-result')
 <div class="result mt-5">
