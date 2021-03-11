@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\RpcService;
 
 use App\VendorService\KYLC;
+use App\VendorService\WMLIVE;
 use GiocoPlus\ParseDetail\Contract\ParseDetailServiceInterface;
 use Hyperf\RpcServer\Annotation\RpcService;
 
@@ -24,6 +25,9 @@ class DetailService implements ParseDetailServiceInterface
                 case 'ky':
                 case 'gflc':
                     $vendorService = new KYLC();
+                    break;
+                case 'wmlive':
+                    $vendorService = new WMLIVE();
                     break;
                 default:
                     throw new \Exception('vendor not exist');

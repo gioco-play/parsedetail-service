@@ -79,7 +79,7 @@ class IndexController extends AbstractController
      * @param string $lang 語言
      * @return ResponseInterface
      */
-    private function view(string $parseType, array $gameDetail, string $vendorCode = '', array $gameResult = [], string $parseMode = ParseMode::STRING_DEFAULT, $lang = 'zh'): ResponseInterface
+    private function view(string $parseType, array $gameDetail, string $vendorCode = '', array $gameResult = [], string $parseMode = ParseMode::STRING, $lang = 'zh'): ResponseInterface
     {
         return $this->render->render($parseMode, [
             'game_result' => $gameResult,
