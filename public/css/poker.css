@@ -7,12 +7,9 @@
     width: 42px;
     height: 60px;
     display: inline-block;
-    zoom: 1;
-    *display: inline;
-    *margin:0 2px;
-    vertical-align: top;
-    background: url("../img/poker.png");
     vertical-align: middle;
+    zoom: 1;
+    background: url("../img/poker.png");
 }
 
 /* 黑桃 */
